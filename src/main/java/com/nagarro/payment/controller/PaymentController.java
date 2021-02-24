@@ -1,4 +1,4 @@
-package com.nagarro.payment;
+package com.nagarro.payment.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class PaymentController {
 
 	@GetMapping("/{customerId}")
-	public boolean getPaymentStatus() {
+	public boolean getPaymentStatus(Long customerId) {
 		return true;
 	}
 }
